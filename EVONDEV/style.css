@@ -264,15 +264,26 @@ a:hover,
 .feature__best--icon {
   width: 5rem;
   height: 5rem;
-  border-radius: 4px;
+  border-radius: 1.5rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
   position: relative;
-  color: #ffc87a;
   z-index: 1;
+}
+.feature__best--icon--blue {
+  color: #5bbfcc;
+}
+.feature__best--icon--purple {
+  color: #ab73e1;
+}
+.feature__best--icon--green {
+  color: #a9dab3;
+}
+.feature__best--icon--orange {
+  color: #f6c04b;
 }
 .feature__best--icon::after {
   content: "";
@@ -295,8 +306,25 @@ a:hover,
   font-size: 1.4rem;
   font-weight: 300;
 }
+.feature__best--list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .feature__best--item {
   width: calc(50% - 30px);
+  margin-bottom: 5rem;
+}
+
+.text-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-clamp--2 {
+  -webkit-line-clamp: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
